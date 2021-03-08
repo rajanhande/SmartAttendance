@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:tools = "http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height = "match_parent"
+    tools:context = ".MainActivity"
+    android:background="@drawable/background"
+    >
+
+    <TextView
+        android:text = "Leave Application"
+        android:layout_width="wrap_content"
+        android:layout_height = "wrap_content"
+        android:id = "@+id/textview"
+        android:textSize = "35dp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:layout_alignParentTop = "true"
+        android:layout_centerHorizontal = "true"
+        android:layout_marginTop="10dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PRN"
+        android:id="@+id/txtprn"
+        android:layout_below="@id/textview"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/prn"
+        android:padding="5dp"
+        android:layout_below="@+id/txtprn"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/edname"
+        android:layout_alignEnd="@+id/edname"
+        android:background="#A19DBE"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:id="@+id/txtname"
+        android:layout_below="@id/prn"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        />
+
+
+    <EditText
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:id = "@+id/edname"
+        android:padding="5dp"
+        android:layout_below="@id/txtname"
+        android:layout_alignParentStart = "true"
+        android:layout_alignParentRight = "true"
+        android:layout_alignParentEnd = "true"
+        android:background="#A19DBE"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Class"
+        android:id="@+id/txtclass"
+        android:layout_below="@id/edname"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        />
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/edclass"
+        android:padding="5dp"
+        android:layout_below="@+id/txtclass"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/edname"
+        android:layout_alignEnd="@+id/edname"
+        android:background="#A19DBE"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:id="@+id/txtdate"
+        android:layout_below="@id/edclass"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/eddate"
+        android:padding="5dp"
+        android:layout_below="@+id/txtdate"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/edclass"
+        android:layout_alignEnd="@+id/edclass"
+        android:background="#A19DBE"
+        android:hint="dd/mm/yyyy"
+         />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Leave From Date"
+        android:id="@+id/txtleavefrom"
+        android:layout_below="@id/eddate"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        />
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edleavefrom"
+        android:padding="5dp"
+        android:layout_below="@+id/txtleavefrom"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/edname"
+        android:layout_alignEnd="@+id/edname"
+        android:background="#A19DBE"
+        android:hint="dd/mm/yyyy"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Leave To Date"
+        android:id="@+id/txtleaveto"
+        android:layout_below="@id/edleavefrom"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edleaveto"
+        android:padding="5dp"
+        android:layout_below="@+id/txtleaveto"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/edname"
+        android:layout_alignEnd="@+id/edname"
+        android:background="#A19DBE"
+        android:hint="dd/mm/yyyy"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reason"
+        android:id="@+id/txtreason"
+        android:layout_below="@id/edleaveto"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/reason"
+        android:padding="5dp"
+        android:layout_below="@+id/txtreason"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/edname"
+        android:background="#A19DBE"
+        android:maxLines="3"
+        android:minLines="2"
+        />
+
+
+    <Button
+        android:id="@+id/btnsubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reason"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="30dp"
+        android:text="SUBMIT"
+        />
+
+
+</RelativeLayout>
